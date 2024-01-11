@@ -6,3 +6,5 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; .\install.ps1
 
 https://github.com/HoussemDellai/aks-file-share
+
+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
