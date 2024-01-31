@@ -19,3 +19,22 @@ WORKDIR /
 
 # Command to start your application or other configurations
 CMD ["/bin/bash"]
+
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dind-pod
+spec:
+  containers:
+  - name: dind-container
+    image: docker:latest
+    securityContext:
+      privileged: true
+    volumeMounts:
+    - name: docker-socket
+      mountPath: /var/run/docker.sock
+  volumes:
+  - name: docker-socket
+    hostPath:
+      path: /var/run/docker.sock
