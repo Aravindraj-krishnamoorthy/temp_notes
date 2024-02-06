@@ -1,10 +1,5 @@
 # temp_notes
 
-https://github.com/hyperledger/fabric/issues/3780
+https://blog.nestybox.com/2022/01/03/dink.html
 
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; .\install.ps1
-
-https://github.com/HoussemDellai/aks-file-share
-
-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
+https://github.com/nestybox/sysbox/blob/master/docs/user-guide/install-k8s.md
