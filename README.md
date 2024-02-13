@@ -4,3 +4,6 @@ Error: chaincode install failed with status: 500 - failed to invoke backing impl
 ===================== Chaincode is installed  =====================
 root@cli-peer0-org1:/# docker ps
 CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+
+https://verizon.webex.com/meet/ashish.shahane
