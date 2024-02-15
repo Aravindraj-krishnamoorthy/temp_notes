@@ -113,3 +113,24 @@ STOPSIGNAL SIGRTMIN+3
 EXPOSE 22
 # Set systemd as entrypoint.
 ENTRYPOINT [ "/sbin/init", " — log-level=err" ]
+
+                                                            
+FROM registry.nestybox.com/nestybox/ubuntu-bionic-systemd-docker
+
+# Install necessary tools
+RUN apt-get update && \
+    apt-get -y install curl nano software-properties-common
+
+# Install Azure CLI
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+
+# Add Git PPA repository and install Git
+RUN add-apt-repository ppa:git-core/ppa && \
+    apt-get update && \
+    DEBIAN_FRONTEND="noninteractive" apt-get install --yes git
+
+# Set working directory
+WORKDIR /
+
+# Start systemd
+CMD ["/sbin/init"]
