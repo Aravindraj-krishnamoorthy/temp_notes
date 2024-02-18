@@ -7,3 +7,6 @@ CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
 
 
 https://verizon.webex.com/meet/ashish.shahane
+
+ESCC invoke result: response:<status:500 message:"make sure the chaincode wholesaleclaim has been successfully defined on channel mychannel and try again: chaincode wholesaleclaim not found" >
+Error: endorsement failure during invoke. response: status:500 message:"make sure the chaincode wholesaleclaim has been successfully defined on channel mychannel and try again: chaincode wholesaleclaim not found"
