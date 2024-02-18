@@ -10,3 +10,7 @@ https://verizon.webex.com/meet/ashish.shahane
 
 ESCC invoke result: response:<status:500 message:"make sure the chaincode wholesaleclaim has been successfully defined on channel mychannel and try again: chaincode wholesaleclaim not found" >
 Error: endorsement failure during invoke. response: status:500 message:"make sure the chaincode wholesaleclaim has been successfully defined on channel mychannel and try again: chaincode wholesaleclaim not found"
+
+
+committed with status (ENDORSEMENT_POLICY_FAILURE) at peer0-org2:7051
+Error: transaction invalidated with status (ENDORSEMENT_POLICY_FAILURE)
