@@ -10,3 +10,5 @@ sudo bash installazurecli-linux
 
 
 https://learn.microsoft.com/en-us/azure/aks/azure-files-csi
+
+https://learn.microsoft.com/en-us/azure/aks/azure-files-csi#use-a-persistent-volume-with-private-azure-files-storage-private-endpoint
