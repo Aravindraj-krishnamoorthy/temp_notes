@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+spec:
+  containers:
+  - image: acrfinledgerqacentralus01.azurecr.io/ubuntu-sysbox:1
+    name: mypod
+    volumeMounts:
+      - name: azure
+        mountPath: /mnt/data
+  volumes:
+  - name: azure
+    persistentVolumeClaim:
+      claimName: pvc-azurefile
