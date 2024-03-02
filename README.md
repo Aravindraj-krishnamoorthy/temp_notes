@@ -18,3 +18,10 @@ Error: transaction invalidated with status (ENDORSEMENT_POLICY_FAILURE)
 
 ESCC invoke result: response:<status:500 message:"error in simulation: failed to execute transaction 8e8ac4e0148d809cdf68aa968dc5690eb22848553ef2612bf593fd25bb416f85: could not launch chaincode wholesaleclaim:2c9ee2c2bc9adc7ff61cd85baa37f843879a0d8bbd0f06dbc6e0eb3f1c9a4aaa: connection to wholesaleclaim:2c9ee2c2bc9adc7ff61cd85baa37f843879a0d8bbd0f06dbc6e0eb3f1c9a4aaa failed: error cannot create connection for wholesaleclaim:2c9ee2c2bc9adc7ff61cd85baa37f843879a0d8bbd0f06dbc6e0eb3f1c9a4aaa: error creating grpc connection to wholesaleclaim-org2:7052: failed to create new connection: connection error: desc = \"transport: error while dialing: dial tcp: lookup wholesaleclaim-org2 on 10.2.0.10:53: no such host\"" >
 Error: endorsement failure during invoke. response: status:500 message:"error in simulation: failed to execute transaction 8e8ac4e0148d809cdf68aa968dc5690eb22848553ef2612bf593fd25bb416f85: could not launch chaincode wholesaleclaim:2c9ee2c2bc9adc7ff61cd85baa37f843879a0d8bbd0f06dbc6e0eb3f1c9a4aaa: connection to wholesaleclaim:2c9ee2c2bc9adc7ff61cd85baa37f843879a0d8bbd0f06dbc6e0eb3f1c9a4aaa failed: error cannot create connection for wholesaleclaim:2c9ee2c2bc9adc7ff61cd85baa37f843879a0d8bbd0f06dbc6e0eb3f1c9a4aaa: error creating grpc connection to wholesaleclaim-org2:7052: failed to create new connection: connection error: desc = \"transport: error while dialing: dial tcp: lookup wholesaleclaim-org2 on 10.2.0.10:53: no such host\""
+
+In case if /r: command not found is not found error is thrown try the following command
+
+sed -i 's/\r$//' scriptname
+
+explanation
+ Option -i is for in-place editing, we delete the trailing \r directly in the input file. thus be careful to type the pattern correctly
