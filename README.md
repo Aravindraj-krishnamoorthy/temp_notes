@@ -25,3 +25,16 @@ sed -i 's/\r$//' scriptname
 
 explanation
  Option -i is for in-place editing, we delete the trailing \r directly in the input file. thus be careful to type the pattern correctly
+
+export CORE_PEER_ADDRESS=ctlorg-peer1:7051
+peer lifecycle \
+    chaincode approveformyorg \
+    --channelID ${CHANNEL_NAME} \
+    --name ${CHAINCODE_NAME} \
+    --version 1 \
+    --package-id ${cc_id} \
+    --sequence ${seq} \
+    -o ${ORDERER_IP}:7070 \
+--ordererTLSHostnameOverride ordorg-orderer1 \
+    --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/ordererOrganizations/ordorg.verizon.com/msp/tlscacerts/ordorg-tls-ca.pem \
+--waitForEvent
