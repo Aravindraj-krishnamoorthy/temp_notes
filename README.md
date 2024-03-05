@@ -46,3 +46,5 @@ peer channel \
     -o ordorg-orderer1:7070 \
 --ordererTLSHostnameOverride ordorg-orderer1 \
     --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/ordererOrganizations/ordorg.verizon.com/msp/tlscacerts/ordorg-tls-ca.pem 
+
+    https://teams.microsoft.com/l/meetup-join/19%3ameeting_NGFhYjE2MDUtM2VlYy00ZDlkLWI2NDQtMmQwODY3MjI5YjRi%40thread.v2/0?context=%7b%22Tid%22%3a%2272b17115-9915-42c0-9f1b-4f98e5a4bcd2%22%2c%22Oid%22%3a%225cdeb330-716b-4268-9fae-2be60d3bbe2e%22%7d
