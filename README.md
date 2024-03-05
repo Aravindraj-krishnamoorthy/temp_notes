@@ -38,3 +38,11 @@ peer lifecycle \
 --ordererTLSHostnameOverride ordorg-orderer1 \
     --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/ordererOrganizations/ordorg.verizon.com/msp/tlscacerts/ordorg-tls-ca.pem \
 --waitForEvent
+
+peer channel \
+    fetch  \
+    config cfg_block.pb \
+    -c vzlumenchannel \
+    -o ordorg-orderer1:7070 \
+--ordererTLSHostnameOverride ordorg-orderer1 \
+    --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/ordererOrganizations/ordorg.verizon.com/msp/tlscacerts/ordorg-tls-ca.pem 
