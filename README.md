@@ -47,8 +47,11 @@ peer channel \
 --ordererTLSHostnameOverride ordorg-orderer1 \
     --tls --cafile /opt/gopath/src/github.com/hyperledger/fabric/peer/organizations/ordererOrganizations/ordorg.verizon.com/msp/tlscacerts/ordorg-tls-ca.pem 
 
-    https://teams.microsoft.com/l/meetup-join/19%3ameeting_NGFhYjE2MDUtM2VlYy00ZDlkLWI2NDQtMmQwODY3MjI5YjRi%40thread.v2/0?context=%7b%22Tid%22%3a%2272b17115-9915-42c0-9f1b-4f98e5a4bcd2%22%2c%22Oid%22%3a%225cdeb330-716b-4268-9fae-2be60d3bbe2e%22%7d
+Error: chaincode install failed with status: 500 - failed to invoke backing implementation of 'InstallChaincode': could not build chaincode: docker build failed: docker image inspection failed: Get "http://unix.sock/images/dev-vzorg-peer1-wtd_1.0-57ff31cd49512495fb7f2cae9982d07df26bf65dfa5fda11ca37d670fd3e6953-3ee7a2a87ed217498611ff8c73bd01bcc36d66bd8ac99bbabfc056e999c6dd88/json": dial unix /var/run/docker.sock: connect: no such file or directory
 
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjgzNGMzZDItYmJkYy00OWQyLWE5ZmUtMWYzY2E0NjBiYWQw%40thread.v2/0?context=%7b%22Tid%22%3a%2272b17115-9915-42c0-9f1b-4f98e5a4bcd2%22%2c%22Oid%22%3a%22f5cccbe0-df10-4816-995d-b5f9a95cbcab%22%7d
-
-https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWU3ZjlkOWItM2IwOC00N2ZkLWIxNWUtZjMzMTIyNDc1MTM2%40thread.v2/0?context=%7b%22Tid%22%3a%2272b17115-9915-42c0-9f1b-4f98e5a4bcd2%22%2c%22Oid%22%3a%22613a5cff-f934-4d49-9100-073f1708681c%22%7d
+Environment : Azure dev cluster
+namespace : finledger
+pod name : cli-vzorg-5c9d76dc76-s29wq
+file path inside pod :/opt/gopath/src/github.com/chaincode/wholesaleclaim/packaging
+file name : wholesaleclaims.tgz
+Command ref : peer lifecycle chaincode install wholesaleclaims.tgz
