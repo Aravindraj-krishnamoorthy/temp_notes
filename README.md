@@ -55,3 +55,15 @@ pod name : cli-vzorg-5c9d76dc76-s29wq
 file path inside pod :/opt/gopath/src/github.com/chaincode/wholesaleclaim/packaging
 file name : wholesaleclaims.tgz
 Command ref : peer lifecycle chaincode install wholesaleclaims.tgz
+
+Environmental variable[Env variable is to be set before running the command which defines peer connection]
+1)vzorg-peer1
+export CORE_PEER_TLS_ROOTCERT_FILE=/organizations/peerOrganizations/vzorg.verizon.com/peers/vzorg-peer1.vzorg.verizon.com/tls/ca.crt
+export CORE_PEER_ADDRESS=vzorg-peer1:7071
+
+2)vzorg-peer2
+export CORE_PEER_TLS_ROOTCERT_FILE=/organizations/peerOrganizations/vzorg.verizon.com/peers/vzorg-peer2.vzorg.verizon.com/tls/ca.crt
+export CORE_PEER_ADDRESS=vzorg-peer2:8071
+
+
+
