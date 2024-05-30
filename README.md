@@ -65,5 +65,23 @@ export CORE_PEER_ADDRESS=vzorg-peer1:7071
 export CORE_PEER_TLS_ROOTCERT_FILE=/organizations/peerOrganizations/vzorg.verizon.com/peers/vzorg-peer2.vzorg.verizon.com/tls/ca.crt
 export CORE_PEER_ADDRESS=vzorg-peer2:8071
 
+[Yesterday 7:26 PM] Aravind Raj CK
+Kumar, Prakash (External)
+Debug wholesaleclaim.tgz file -- means to say that compile the wholesaleclaim code artifact in VS code editor
 
 
+i extracted the content wholesaleclaim.tgz and compared with basic.tgz file
+ 
+Note : the only eye catching difference is META-INF folder is present inside wholesaleclaim.tgz but its not present in basic.tgz
+ 
+so now I included that folder inside the basic package and then basic.tgz is also giving me same error.
+i am now certain package is where the problem lies.
+i have to ask verizon these questions
+1) how they are packaging(i have good idea on packaging but are they using something else here), and 
+2) in there deployment how they are bypassing this error
+
+able to install basic chaincode two times in peer1 of org1 in dev-azure
+ 
+but when i try to install the wholesaleclaim.tgz in the same environment, i am getting this error
+ 
+and i checked with different images and version but this error is being persistent for this package.
